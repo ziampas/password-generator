@@ -11,6 +11,7 @@ const adjectives = [
   'funny',
   'sad',
   'sweet',
+  'Seda'
 ];
 
 const nouns = [
