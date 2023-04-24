@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>My Website</title>
+  <meta name="description" content="A brief description of my website">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col"><h2>Generera lösenord: </h2></div>
+        
+        <div class="w-100"></div>
+        <div class="col"><input type="text" id="generated-password" readonly class="rounded"></div>
+        <button id="generate-password" class="btn btn-success">Generate Password</button>
+        <button id="copy-to-clipboard" class="btn btn-primary mt-3">Copy to Clipboard</button>
+        <p>Password length: <span id="password-length"></span></p>
+      </div>
+    </div>
+  </main>
+  <script src="js\script.js"></script>
+</body>
+</html>
