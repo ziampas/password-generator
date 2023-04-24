@@ -43,19 +43,16 @@ function generatePassword() {
   return { password, passwordLength };
 }
 
-
 const generateBtn = document.getElementById("generate-password");
 const generatedPasswordInput = document.getElementById("generated-password");
 const passwordLengthElement = document.getElementById("password-length");
 const copyBtn = document.getElementById("copy-to-clipboard");
-
 
 generateBtn.addEventListener("click", () => {
   const { password, passwordLength } = generatePassword();
   generatedPasswordInput.value = password;
   passwordLengthElement.textContent = passwordLength;
 });
-
 
 copyBtn.addEventListener("click", () => {
   generatedPasswordInput.select();
