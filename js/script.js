@@ -1,34 +1,5 @@
-const adjectives = [
-  'swedish',
-  'warm',
-  'cold',
-  'funny',
-  'angry',
-  'green',
-  'purple',
-  'absent',
-  'mild',
-  'funny',
-  'sad',
-  'sweet',
-  'Seda'
-];
-
-const nouns = [
-  'Summer', 
-  'Winter', 
-  'Koala', 
-  'Summer',
-  'Square',
-  'Cloud',
-  'Papaya',
-  'Elephant',
-  'Kindness',
-  'Skills',
-  'Questions',
-  'Fish',
-  'Zebra'
-];
+import { adjectives } from './adjectives.js';
+import { nouns } from './nouns.js';
 
 function generatePassword() {
   const adjective = adjectives[Math.floor(Math.random() * adjectives.length)];
