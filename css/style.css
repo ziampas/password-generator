@@ -16,3 +16,10 @@ html, body {
     font-family:Helvetica;
   }
   
+  #password-length {
+    font-weight: bold;
+  }
+
+  #generated-password {
+    padding:12px;
+  }
