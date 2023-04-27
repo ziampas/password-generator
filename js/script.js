@@ -5,13 +5,12 @@ function generatePassword() {
   const adjective = adjectives[Math.floor(Math.random() * adjectives.length)];
   const noun = nouns[Math.floor(Math.random() * nouns.length)];
   const specialChar = "!@#$%^&*()_+-=";
-  const randomNumber1 = Math.floor(Math.random() * 10);
-  const randomNumber2 = Math.floor(Math.random() * 10);
+  const randomNumber = Math.floor(Math.random() * 10);
   const randomSpecialChar = specialChar[Math.floor(Math.random() * specialChar.length)];
-  
-  const password = adjective + noun + randomNumber1 + randomNumber2 + randomSpecialChar;
+
+  const password = adjective + noun + randomNumber + randomSpecialChar;
   const passwordLength = password.length;
-  
+
   return { password, passwordLength };
 }
 
@@ -29,5 +28,5 @@ generateBtn.addEventListener("click", () => {
 copyBtn.addEventListener("click", () => {
   generatedPasswordInput.select();
   document.execCommand("copy");
+  alert("Password has been copied!");
 });
-
