@@ -5,7 +5,7 @@ function generatePassword() {
   const adjective = adjectives[Math.floor(Math.random() * adjectives.length)];
   const noun = nouns[Math.floor(Math.random() * nouns.length)];
   const specialChar = "!@#$%^&*()_+-=";
-  const randomNumber = Math.floor(Math.random() * 10);
+  const randomNumber = Math.floor(Math.random() * 90) + 10; // generates a random number between 10 and 99
   const randomSpecialChar = specialChar[Math.floor(Math.random() * specialChar.length)];
 
   const password = adjective + noun + randomNumber + randomSpecialChar;
