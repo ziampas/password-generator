@@ -25,6 +25,11 @@ generateBtn.addEventListener("click", () => {
   passwordLengthElement.textContent = passwordLength;
 });
 
+generatedPasswordInput.addEventListener("input", () => {
+  const passwordLength = generatedPasswordInput.value.length;
+  passwordLengthElement.textContent = passwordLength;
+});
+
 copyBtn.addEventListener("click", () => {
   generatedPasswordInput.select();
   document.execCommand("copy");
