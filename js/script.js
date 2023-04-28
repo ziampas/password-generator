@@ -4,7 +4,7 @@ import { nouns } from './nouns.js';
 function generatePassword() {
   const adjective = adjectives[Math.floor(Math.random() * adjectives.length)];
   const noun = nouns[Math.floor(Math.random() * nouns.length)];
-  const specialChar = "!@#$%^&*()_+-=";
+  const specialChar = "!@#$%&*()_+-=";
   const randomNumber = Math.floor(Math.random() * 90) + 10; // generates a random number between 10 and 99
   const randomSpecialChar = specialChar[Math.floor(Math.random() * specialChar.length)];
 
@@ -33,5 +33,15 @@ generatedPasswordInput.addEventListener("input", () => {
 copyBtn.addEventListener("click", () => {
   generatedPasswordInput.select();
   document.execCommand("copy");
-  alert("Password has been copied!");
+
+  const alertDiv = document.createElement("div");
+  alertDiv.classList.add("alert", "alert-success", "my-3");
+  alertDiv.innerHTML = "Password has been copied!";
+
+  const parentElement = copyBtn.parentElement;
+  parentElement.insertBefore(alertDiv, copyBtn.nextSibling);
+
+  setTimeout(() => {
+    alertDiv.remove();
+  }, 3000);
 });
