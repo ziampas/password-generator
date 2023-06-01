@@ -9,31 +9,42 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-  <div class="container-fluid h-100">
-    <div class="row h-100">
-      <div class="col-sm-6 d-flex justify-content-center align-items-center">
-
-        <div class="p-4">
-          <a href="index.html">
-            <img src="img/logotype.png" style="width:528.25px;">
-          </a>        
-          <p>
-            <input type="text" id="generated-password" class="form-control rounded shadow-sm mt-4" style="">
-          </p>
-            <button id="generate-password" class="btn btn-dark">Generate</button>
-            <button id="copy-to-clipboard" class="btn btn-dark" style="width:175px;">Copy to Clipboard</button>
-            <p class="mt-4">
-              Password length: <span id="password-length"></span>
-            </p>   
-        </div>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top p-2">
+    <h2 class="navbar-brand">
+      <img src="img/logotype.png">
+    </h2>
+  </nav>
+  <div class="container d-flex align-items-center justify-content-center" style="height: 100vh;">
+    <div class="row">
+      <div class="col text-center">
+        <img src="img/passbear_new.png" alt="" style="width: 85%;">
       </div>
-      <div class="col-sm-6 d-flex justify-content-center align-items-center">
-        <div class="p-4">
-          <img src="img/mascot.png" alt="" style="width:50%">
+      <div class="col position-relative">
+        <div class="speech-bubble p-4">
+          <h1 class="text-dark">Generate password</h1>
+          <input type="text" id="generated-password" class="form-control rounded shadow-sm">
+          <button id="generate-password" class="btn btn-dark mt-4">Generate</button>
+          <button id="copy-to-clipboard" class="btn btn-dark mt-4">Copy to Clipboard</button>
+          <p class="mt-4">
+            Password length: <span id="password-length"></span>
+          </p>
         </div>
       </div>
     </div>
   </div>
+  <footer class="bg-dark text-light py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          Copyright PassBear 2023
+        </div>
+        <div class="col-md-6">
+          <h4>About Passbear</h4>
+          <p>PassBear is your go-to password generator, designed to simplify the creation of secure yet easy-to-remember passwords. Our innovative algorithm ensures that generating strong passwords is effortless.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
   <script type="module" src="js/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>

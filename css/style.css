@@ -1,25 +1,37 @@
-html, body {
-    height: 100%;
-    min-height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-  
-  body {
-    background: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
-  }
+body {
+background: #E091CB;
+background: linear-gradient(135deg, #E091CB, #E595CC);}
 
-  #generated-password {
-    font-weight: bold;
-    font-size: 24px;
-    font-family:Helvetica;
-  }
-  
-  #password-length {
-    font-weight: bold;
-  }
+#generated-password {
+  font-weight: bold;
+  font-size: 24px;
+  font-family: Helvetica;
+  padding: 12px;
+}
 
-  #generated-password {
-    padding:12px;
-  }
+#password-length {
+  font-weight: bold;
+}
+
+.speech-bubble {
+  position: relative;
+  background: #ffffff;
+  border-radius: 20px; /* Increase the border-radius value for even rounder corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increase the size of the shadow */
+}
+
+.speech-bubble:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-right-color: #ffffff;
+  border-left: 0;
+  border-bottom: 0;
+  margin-top: -10px;
+  margin-left: -20px;
+}
+
