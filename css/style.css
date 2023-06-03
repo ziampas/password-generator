@@ -9,10 +9,16 @@ body {
   flex: 1;
 }
 
+.col,
+.row {
+  width: 85%;
+  height: 85%;
+}
+
 #generated-password {
-  font-weight: bold;
   font-size: 24px;
   font-family: Helvetica;
+  font-weight: bold;
   padding: 12px;
 }
 
@@ -21,50 +27,39 @@ body {
 }
 
 .speech-bubble {
-  position: relative;
   background: #ffffff;
   border-radius: 24px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  padding: 2rem;
+  height: auto;
   min-width: 400px;
-  height: auto; /* Adjust height dynamically based on content */
+  padding: 2rem;
+  position: relative;
 }
 
 .speech-bubble:after {
+  border: 24px solid transparent;
+  border-bottom: 0;
+  border-left: 0;
+  border-right-color: #ffffff;
   content: '';
-  position: absolute;
+  height: 0;
   left: 0;
+  margin-left: -24px;
+  margin-top: -12px;
+  position: absolute;
   top: 50%;
   width: 0;
-  height: 0;
-  border: 24px solid transparent;
-  border-right-color: #ffffff;
-  border-left: 0;
-  border-bottom: 0;
-  margin-top: -12px;
-  margin-left: -24px;
-}
-
-
-.col,
-.row {
-  width: 85%;
-  height: 85%;
-}
-
-footer {
-  background: #000000;
-  color: #ffffff;
-  padding: 1rem;
-  text-align: center;
-  margin-top: auto;
 }
 
 /* Media Queries */
 @media (max-width: 767px) {
-  .speech-bubble {
-    min-width: 100%;
-    min-height: auto;
+  .col,
+  .row {
+    margin-bottom: 1.5rem;
+  }
+
+  .col:first-child {
+    margin-top: 1rem;
   }
 
   #generated-password {
@@ -76,16 +71,8 @@ footer {
     font-size: 14px;
   }
 
-  .col,
-  .row {
-    margin-bottom: 1.5rem; /* Add slightly more margin between col divs */
-  }
-
-  .col:first-child {
-    margin-top: 1rem; /* Add margin-top on the first col */
-  }
-
-  footer {
-    margin-top: 1.5rem; /* Add slightly more margin between col divs and footer */
+  .speech-bubble {
+    min-height: auto;
+    min-width: 100%;
   }
 }
