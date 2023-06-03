@@ -1,5 +1,3 @@
-export { nouns };
-
 const nouns = [
   'Apple',
   'Banana',
@@ -67,3 +65,5 @@ const nouns = [
   'Yacht',
   'Yogurt'
 ];
+
+export { nouns };

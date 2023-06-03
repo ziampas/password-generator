@@ -1,5 +1,3 @@
-export { adjectives };
-
 const adjectives = [
   'absent',
   'angry',
@@ -61,4 +59,5 @@ const adjectives = [
   'sunny',
   'tasty'
 ];
-  
+
+export { adjectives };

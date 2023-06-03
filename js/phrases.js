@@ -1,15 +1,34 @@
-export { phrases };
-
 const phrases = [
-    "Password power, delivered by PassBear!",
-    "Unleashing a password, courtesy of PassBear!",
-    "PassBear's secret code, just for you!",
-    "PassBear presents your password masterpiece!",
-    "Unlocking security with PassBear's password gift!",
-    "PassBear delivers a password surprise, just for you!",
-    "Behold! PassBear unveils your exclusive password!",
-    "PassBear's password prowess at your fingertips!",
-    "PassBear works its magic, revealing your password gem!",
-    "PassBear's password wizardry grants you access!"
-  ];
-  
+  "Password power, delivered by PassBear!",
+  "Unleashing a password, courtesy of PassBear!",
+  "PassBear's secret code, just for you!",
+  "PassBear presents your password masterpiece!",
+  "Unlocking security with PassBear's password gift!",
+  "PassBear delivers a password surprise, just for you!",
+  "Behold! PassBear unveils your exclusive password!",
+  "PassBear's password prowess at your fingertips!",
+  "PassBear works its magic, revealing your password gem!",
+  "PassBear's password wizardry grants you access!",
+  "Here you go! PassBear has your password ready!",
+  "Unlocking secrets with PassBear's password wizardry!",
+  "PassBear whispers a secure password into your ear!",
+  "Behold the password bestowed upon you by PassBear!",
+  "PassBear's password expertise at your service!",
+  "PassBear's password generator: Your key to security!",
+  "PassBear unlocks the door to your new password!",
+  "Ready or not, here comes PassBear's password creation!",
+  "PassBear's secret recipe: A strong and secure password!",
+  "In the realm of passwords, PassBear reigns supreme!",
+  "Abracadabra! PassBear conjures up a quirky password!",
+  "Get ready for a password that even unicorns envy!",
+  "PassBear's password magic: It's bear-y amazing!",
+  "Hold on tight! PassBear's about to unveil your secret code!",
+  "Riddle me this: PassBear's password is your key to success!",
+  "A password fit for a superhero, brought to you by PassBear!",
+  "PassBear's password trickery will leave you in awe!",
+  "Unlock the vault of hilarity with PassBear's quirky password!",
+  "PassBear's password mojo brings a smile to your face!",
+  "It's password o'clock! Let PassBear serve up some humor!",
+];
+
+export { phrases };
