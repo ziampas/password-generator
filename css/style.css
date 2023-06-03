@@ -1,6 +1,7 @@
 body {
-background: #E8B3FC;
-background: linear-gradient(135deg, #E8B3FC, #F9B3E4);}
+  background: #E8B3FC;
+  background: linear-gradient(135deg, #E8B3FC, #F9B3E4);
+}
 
 #generated-password {
   font-weight: bold;
@@ -16,8 +17,11 @@ background: linear-gradient(135deg, #E8B3FC, #F9B3E4);}
 .speech-bubble {
   position: relative;
   background: #ffffff;
-  border-radius: 24px; /* Increase the border-radius value for even rounder corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increase the size of the shadow */
+  border-radius: 24px;
+  /* Increase the border-radius value for even rounder corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Increase the size of the shadow */
+  padding: 2rem;
 }
 
 .speech-bubble:after {
@@ -27,11 +31,13 @@ background: linear-gradient(135deg, #E8B3FC, #F9B3E4);}
   top: 50%;
   width: 0;
   height: 0;
-  border: 24px solid transparent; /* Increase the border size */
+  border: 24px solid transparent;
+  /* Increase the border size */
   border-right-color: #ffffff;
   border-left: 0;
   border-bottom: 0;
-  margin-top: -12px; /* Adjust the margin-top value to center the arrow */
-  margin-left: -24px; /* Adjust the margin-left value to position the arrow */
+  margin-top: -12px;
+  /* Adjust the margin-top value to center the arrow */
+  margin-left: -24px;
+  /* Adjust the margin-left value to position the arrow */
 }
-
