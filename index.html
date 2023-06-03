@@ -11,17 +11,18 @@
 </head>
 <body>
   <div id="alertDiv" class="alert alert-success mb-0 m-2" role="alert">
-    New url! <a href="https://passbear.ziampas.com">https://passbear.ziampas.com</a>
+    <span style="font-weight:bold;">New url!</span> <a href="https://passbear.ziampas.com">https://passbear.ziampas.com</a>
   </div>
   <div class="container d-flex align-items-center justify-content-center" style="height: 100vh;">
     <div class="row">
-      <div class="col text-center">
+      <div class="col text-center d-flex align-items-center justify-content-center">
         <a href="http://passbear.ziampas.com/">
-          <img src="img/passbear_new.png" alt="" style="width: 70%;">
+          <img src="img/passbear_new.png" alt="" style="height: 60vh;">
         </a>
       </div>
       <div class="col position-relative d-flex align-items-center">
         <div class="speech-bubble p-5 w-100">
+          <p id="passwordPhrase" class="mb-4">PassBear is ready to generate your password!</p>
           <input type="text" id="generated-password" class="form-control rounded shadow-sm">
           <button id="generate-password" class="btn btn-primary mt-4">Generate a password</button>
           <button id="copy-to-clipboard" class="btn btn-primary mt-4">Copy to Clipboard</button>
@@ -36,7 +37,7 @@
     <div class="container">
       <div class="row">
         <div class="col text-center">
-          <p class="my-4">
+          <p class="my-2">
             <span style="font-weight:bold;">PassBear</span> - Simplifying password creation for enhanced online security.
           </p>
         </div>
