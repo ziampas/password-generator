@@ -2,19 +2,34 @@ import { adjectives } from './adjectives.js';
 import { nouns } from './nouns.js';
 import { phrases } from './phrases.js';
 
-// Function to generate a password
+// Funktion för att generera ett lösenord
 const generatePassword = () => {
-  // Randomly select an adjective and noun
+  // Hämta användarens valda alternativ för teckenuppsättningen
+  const includeNumbers = document.getElementById("numbers-option").checked;
+  const includeSpecialChars = document.getElementById("specialchars-option").checked;
+
+  // Skapa listor med tecken baserat på användarens valda alternativ
+  let characters = "";
+  if (includeNumbers) characters += "0123456789";
+  if (includeSpecialChars) characters += "!@#+";
+
+  // Slumpmässigt välj ett tecken från den skapade teckenuppsättningen
+  const getRandomCharacter = () => characters[Math.floor(Math.random() * characters.length)];
+
+  // Slumpmässigt välj en adjektiv och substantiv
   const adjective = adjectives[Math.floor(Math.random() * adjectives.length)];
   const noun = nouns[Math.floor(Math.random() * nouns.length)];
 
-  // Define special characters and generate a random number and special character
+  // Definiera specialtecken och generera ett slumpmässigt nummer och specialtecken
   const specialChars = "!@#+";
   const randomNumber = Math.floor(Math.random() * 90) + 10;
   const randomSpecialChar = specialChars[Math.floor(Math.random() * specialChars.length)];
 
-  // Concatenate the parts to form the password
-  const password = `${adjective}${noun}${randomNumber}${randomSpecialChar}`;
+  // Slumpmässigt välj tecken från teckenuppsättningen för att bilda lösenordet
+  let password = adjective + noun;
+  if (includeNumbers) password += randomNumber;
+  if (includeSpecialChars) password += randomSpecialChar;
+
   const passwordLength = password.length;
 
   return { password, passwordLength };
@@ -75,4 +90,12 @@ copyBtn.addEventListener("click", () => {
   setTimeout(() => {
     successAlert.remove();
   }, 3000);
+});
+
+const passwordLengthSlider = document.getElementById("password-length");
+const passwordLengthValue = document.getElementById("password-length-value");
+
+// Uppdatera visningen av det valda värdet för lösenordslängden
+passwordLengthSlider.addEventListener("input", () => {
+  passwordLengthValue.textContent = passwordLengthSlider.value;
 });
