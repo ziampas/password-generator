@@ -14,7 +14,7 @@ const adjectives = [
   'lovely',
   'lucky',
   'mild',
-  'naughty',
+  'natural',
   'nice',
   'playful',
   'plucky',
