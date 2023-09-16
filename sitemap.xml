@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://passbear.me</loc> <!-- URL till din webbsida -->
-    <lastmod>2023-09-16</lastmod> <!-- Datum för senaste ändring på webbsidan (använd datumet du vill) -->
-    <changefreq>monthly</changefreq> <!-- Hur ofta ändringar på sidan förväntas (till exempel: always, hourly, daily, weekly, monthly, yearly, never) -->
-    <priority>1.0</priority> <!-- Prioritet för sidan (normalt mellan 0.0 och 1.0) -->
+    <loc>https://passbear.me</loc> 
+    <lastmod>2023-09-16</lastmod> 
+    <changefreq>monthly</changefreq> 
+    <priority>1.0</priority>
   </url>
 </urlset>
