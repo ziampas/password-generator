@@ -16,7 +16,6 @@ const nouns = [
   'Guitar',
   'Horse',
   'Island',
-  'Jellyfish',
   'Kangaroo',
   'Koala',
   'Lion',
@@ -63,7 +62,6 @@ const nouns = [
   'Window',
   'Wizard',
   'Yacht',
-  'Yogurt'
 ];
 
 export { nouns };

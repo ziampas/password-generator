@@ -11,7 +11,7 @@ const generatePassword = () => {
   // Skapa listor med tecken baserat på användarens valda alternativ
   let characters = "";
   if (includeNumbers) characters += "0123456789";
-  if (includeSpecialChars) characters += "!@#+";
+  if (includeSpecialChars) characters += "!@#";
 
   // Slumpmässigt välj ett tecken från den skapade teckenuppsättningen
   const getRandomCharacter = () => characters[Math.floor(Math.random() * characters.length)];
