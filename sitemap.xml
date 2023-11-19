@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://passbear.me</loc> 
-    <lastmod>2023-09-16</lastmod> 
-    <changefreq>monthly</changefreq> 
+    <loc>https://passbear.me</loc>
+    <lastmod>2023-11-19T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
+  <!-- Add more URLs if applicable -->
 </urlset>
