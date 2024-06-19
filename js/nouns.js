@@ -34,7 +34,6 @@ const nouns = [
   'Sailboat',
   'Sea',
   'Shark',
-  'Skills',
   'Square',
   'Star',
   'Summer',
@@ -61,7 +60,7 @@ const nouns = [
   'Whale',
   'Window',
   'Wizard',
-  'Yacht',
+  'Yacht'
 ];
 
 export { nouns };

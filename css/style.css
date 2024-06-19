@@ -1,9 +1,8 @@
 body {
-  background: #E565DD;
-  background: linear-gradient(135deg, #E565DD, #DB60B5);
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  background-image: url('../img/bg.png');
+  background-repeat: repeat; /* Ensures the pattern repeats */
+  background-size: 400px 400px; /* Scale the pattern to 400px by 400px */
+  background-position: top left; /* Align the pattern from the top left corner */
 }
 
 .container {
@@ -18,7 +17,7 @@ body {
 
 #generated-password {
   font-size: 24px;
-  font-family: Helvetica;
+  font-family: Helvetica, sans-serif;
   font-weight: bold;
   padding: 12px;
 }
